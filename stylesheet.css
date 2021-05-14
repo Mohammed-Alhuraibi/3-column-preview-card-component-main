@@ -1,0 +1,132 @@
+
+/* Variables */
+
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white : hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+ *{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    background-color: var(--Very-light-gray);
+    font-size: 15px;
+}
+
+/* Mobile View */
+
+#flexbox_container{
+    display: flex;
+    flex-direction: column;
+    margin: 100px 25px; 
+
+}
+
+.items{
+    padding: 50px;
+
+}
+.items h1{
+    color: var(--Very-light-gray);
+    text-transform: uppercase;
+    margin: 30px 0 ;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.items p{
+    color: var(--Transparent-white);
+    line-height: 1.5;
+     font-family: "Lexend Deca", sans-serif;
+    font-weight: 400; 
+
+}
+
+ .learn_more {
+    background-color: var(--Very-light-gray); /* Green */
+    border-radius: 50px;
+    color: var(--Very-light-gray);
+    padding: 15px 32px;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.flexbox_item-1 {
+    background-color: var(--Bright-orange);
+    border-radius: 7px 7px 0 0 ;
+    
+}
+.flexbox_item-1 .learn_more p {
+    text-transform: capitalize;
+    color: var(--Bright-orange);
+}
+
+
+.flexbox_item-2{
+    background-color: var(--Dark-cyan);
+    
+}
+
+.flexbox_item-2 .learn_more p {
+    text-transform: capitalize;
+    color: var(--Dark-cyan);
+}
+
+.flexbox_item-3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 7px 7px;
+
+}
+
+.flexbox_item-3 .learn_more p {
+    text-transform: capitalize;
+    color: var(--Very-dark-cyan);
+}
+
+
+/* Desktop view */
+
+@media (min-width:1000px)
+{
+ #flexbox_container{
+    flex-direction: row;
+    justify-content: center;
+
+   
+}
+.items{
+    width: 15%;
+}
+.items h1{
+  
+    margin: 30px 0 20px 0 ;
+
+}
+.flexbox_item-1 {
+    border-radius: 7px 0 0 7px ; 
+}
+.flexbox_item-3 {
+    border-radius: 0 7px 7px  0; 
+}
+
+.learn_more {
+    margin: 90px auto 0 auto;  
+}
+
+
+
+
+
+} 
+
+    
+
+
